@@ -1,0 +1,15 @@
+.user-controls {
+  max-width: 1300px;
+	margin-top: 100px;
+}
+
+.user-controls__cards {
+  display: grid;
+	gap: 44px 32px;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto auto;
+	grid-auto-flow: row;
+	align-items: center;
+	margin-top: 40px;
+	justify-content: start;
+}

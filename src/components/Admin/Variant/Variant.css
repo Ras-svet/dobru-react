@@ -1,0 +1,238 @@
+.variant {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding-top: 70px;
+}
+
+.variant__header {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	align-items: center;
+	justify-content: center;
+	gap: 26px;
+}
+
+.variant__header_title {
+	margin: 0;
+	padding: 0;
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 36px;
+	color: #fff;
+}
+
+.variant__questions {
+	display: flex;
+	padding: 0;
+	padding-left: 30px;
+	margin: 0;
+	padding-top: 62px;
+	flex-direction: column;
+	gap: 35px
+}
+
+.variant__question {
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.variant__questions-close {
+	list-style-image: url('../../../images/Ellipse.svg');
+	padding-top: 26px;
+	/* display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min-content, 200px)) */
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+	width: 100%;
+}
+
+.variant__answer-close {
+	padding: 0;
+	padding-left: 20px;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.variant__answer-open {
+	border: 1px solid #BBAACC;
+	margin-top: 26px;
+  padding: 16px;
+  min-width: 80%;
+}
+
+.variant__block-open {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.variant__footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 78px;
+	margin-bottom: 60px;
+}
+
+.variant__moving {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	height: 100%;
+}
+
+.variant__moving_text {
+	color: #fff;
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to right, #BBAACC, #BBAACC 50%, #fff 50%);
+	background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+	transition: background-position 275ms ease;
+  width: 400px;
+}
+
+.variant__moving_text:hover {
+	background-position: 0 100%;
+	cursor: pointer;
+}
+
+.variant__buttons {
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+}
+
+.variant__deletion {
+	background-image: url('../../../images/trash-svgrepo-com\ \(1\).svg');
+	border: 0;
+	background-color: transparent;
+	background-size: cover;
+	width: 33px;
+	height: 33px
+}
+
+.variant__creation {
+	background-image: url('../../../images/share-1-svgrepo-com.svg');
+	border: 0;
+	background-color: transparent;
+	background-size: cover;
+	width: 33px;
+	height: 33px
+}
+
+.variant__button:hover {
+	cursor: pointer;
+	box-shadow: 0px 0px 20px #764DA0;
+}
+
+.variant__lab-text {
+  align-self: start;
+  text-align: start;
+  justify-self: start;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  font-size: 20px;
+	line-height: 24px;
+	font-weight: 400;
+  color: #fff;
+}
+
+.variant__task {
+  align-self: start;
+  text-align: start;
+  justify-self: start;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  font-size: 20px;
+	line-height: 24px;
+	font-weight: 400;
+  color: #fff;
+  padding-top: 25px;
+}
+
+.variant__persons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 20px;
+	line-height: 24px;
+	font-weight: 400;
+  color: #fff;
+}
+
+.variant__person {
+  border-radius: 30px;
+  border: 3px solid #BBAACC;
+  width: 50%;
+  padding: 8px;
+}
+
+.file__download {
+  width: 24px;
+  height: 24px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.variant__answer-selected {
+  list-style-image: url('../../../images/selected-answer.svg');
+}
+
+.variant__answer-check {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  padding-top: 10px;
+  margin-left: 10px;
+  height: 100% inherit;
+  border: 1px solid white;
+  margin-top: 26px;
+  width: 10%;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.variant__answer-check:hover {
+  box-shadow: 0px 0px 20px white;
+}
+
+.variant__answer-check_done{
+  background-color: #BBAACC;
+}
+
+.variant__answer-check::before {
+  content: '\2713'; /* код галочки */
+  font-size: 36px;
+  color: white;
+}
+
+.variant__confirm {
+  background-image: url('../../../images/approve.svg');
+	border: 0;
+	background-color: transparent;
+	background-size: cover;
+	width: 33px;
+	height: 33px
+}

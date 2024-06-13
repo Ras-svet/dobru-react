@@ -1,0 +1,281 @@
+.popup {
+	align-items: center;
+	background-color: rgba(0,0,0,.1);
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	left: 0;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	transition: visibility .2s,opacity .3s linear;
+	visibility: hidden;
+	width: 100vw;
+	backdrop-filter: blur(7px);
+}
+
+.popup_opened {
+	opacity: 1;
+	visibility: visible
+}
+
+.popup__container {
+	background: #fff;
+	border-radius: 24px;
+	box-shadow: 0 0 25px rgba(0,0,0,.15);
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	gap: 32px;
+	padding-left: 44px;
+	padding-right: 60px;
+}
+
+@media screen and (max-width: 550px) {
+	.popup__container {
+			width: 450px;
+			margin: 0;
+	}
+}
+
+.popup__close-button {
+	position: absolute;
+	top: 22px;
+	right: 26px;
+	width: 18px;
+	height: 18px;
+	background-size: contain;
+	border: none;
+	background-color: #fff;
+	background-image: url(../../../images/close-button.svg);
+}
+
+.popup__close-button:hover {
+	cursor: pointer;
+}
+
+.popup__title {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 39px;
+	margin: 0;
+	padding: 40px 150px 0 0;
+	color: #000;
+}
+
+.popup__form {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.popup__input {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	border: 0;
+	border-bottom: 2px solid #000;
+	max-width: 348px;
+	padding-bottom: 5px;
+}
+
+.popup__selection {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	margin-bottom: 24px;
+}
+
+.popup__selection-title {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+.popup__selection-options {
+	border: 1px solid #BBAACC;
+	border-radius: 15px;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	width: 135px;
+	appearance: none;
+  overflow: hidden;
+	padding-right: 20px;
+	padding-left: 8px;
+  background: url('../../../images/strelka.png') no-repeat right;
+	background-position: 95%;
+}
+
+.popup__button {
+	max-width: 200px;
+	height: 40px;
+	background-color: #BBAACC;
+	color: #000;
+	border: none;
+	border-radius: 24px;
+	justify-self: end;
+	font-size: 18px;
+	line-height: 20px;
+	margin: 0;
+	font-weight: 400;
+	padding: 0 30px 0 30px;
+	margin-bottom: 20px;
+	align-self: flex-end;
+}
+
+.popup__button-active:hover {
+	cursor: pointer;
+	border: 1px solid #000;
+	box-shadow: 0px 0px 20px #7913df;
+}
+
+.popup__button-disable {
+	opacity: 0.5;
+}
+
+.popup__error {
+	min-height: 16px;
+	padding: 0;
+	color: #EE3465;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 12px;
+}
+
+.popup__genarate-options {
+	width: 210px;
+	-webkit-padding-end: 25px; /* Несмотря на присущую ему странность, данный код корректно работает в iOS */
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.popup__input-number {
+	max-width: 10%;
+	align-self: center;
+	/* border: 1px solid #BBAACC; */
+	text-align: center;
+}
+
+.popup__input-file {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.input__file {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  background-image: url('../../../images/upload.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.input__file-span {
+  font-size: 20px;
+	font-weight: 500;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+  margin-left: 30px;
+  border: 0;
+  background: transparent;
+  color: #BBAACC
+}
+
+.input__file-span_done {
+  color: green
+}
+
+.popup__adding {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.popup__list {
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.popup__point {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #BBAACC;
+	border-radius: 30px;
+	padding: 10px 18px;
+	text-align: start;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.popup__add-answer-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.popup__add-answer-button:hover {
+  color: #333;
+}
+
+.popup__add-answer-button-icon {
+  margin-right: 8px;
+}
+
+.popup__delete-button {
+	width: 18px;
+	height: 18px;
+	background-size: contain;
+	border: none;
+	background-color: transparent;
+	background-image: url(../../../images/close-button.svg);
+	margin-left: 10px;
+}
+
+.popup__point:hover {
+	background-color: #BBAACC;
+}
+
+.popup__delete-button:hover {
+	cursor: pointer;
+}
+
+.popup__group {
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+}
+
+.popup__button-group {
+	margin: 0;
+}
+
+.popup__error-group {
+	align-self: center;
+}

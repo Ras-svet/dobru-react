@@ -1,0 +1,7 @@
+.deadline {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 40px 10px 0 10px;
+  align-items: center;
+}

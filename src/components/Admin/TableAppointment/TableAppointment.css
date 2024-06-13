@@ -1,0 +1,68 @@
+.appoint {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 40px 10px 0 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.appoint__navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.appoint__navbar-text {
+	color: #fff;
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+  padding-right: 30px;
+  border: none;
+  background: none;
+}
+
+.appoint__navbar-text:hover {
+	background-position: 0 100%;
+	cursor: pointer;
+}
+
+.appoint__navbar-text_focused {
+  color: #BBAACC;
+  text-decoration: underline;
+}
+
+.appoint__table {
+  border-collapse: separate;
+  border-spacing: 0;
+  color: #fff;
+  font-size: 20px;
+	line-height: 24px;
+	font-weight: 400;
+  margin-top: 30px;
+  align-self: center;
+  margin: 50px auto;
+}
+
+.appoint__table th,
+.appoint__table td {
+  border: 1px solid rgb(187,170,204);
+  padding: 30px 35px;
+  text-align: center;
+}
+
+.appoint__table thead th {
+  background-color: rgba(187,170,204, 0.3);
+}
+
+.appoint__table tbody tr {
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.appoint__table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

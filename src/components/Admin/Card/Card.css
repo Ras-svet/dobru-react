@@ -1,0 +1,128 @@
+.card {
+	border: 1px solid #000;
+	border-radius: 30px;
+	min-height: 230px;
+	background-color: #D9D9D9;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	/* max-width: 100%; */
+	box-shadow: 11px -6px 0px 2px #8F7BA4;
+	font-weight: 400;
+	position: relative;
+}
+
+.card__title {
+	margin: 38px 0 0px 0;
+	padding: 0 0 0;
+	font-family: 'Inter', Arial, sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #000;
+	align-self: center;
+}
+
+.card__info {
+	margin: 0 10px
+}
+
+.card__text {
+	margin: 0 0 6px 0;
+	padding: 0 0 0;
+	font-family: 'Inter', Arial, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 20px;
+	color: #000;
+	align-self: center;
+	overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.card__button {
+	border-radius: 24px;
+	min-height: 35px;
+	max-width: 512px;
+	margin: 0px 14px 0px 19px;
+	background-color: #D9D9D9;
+	border: 2px solid #8F7BA4;
+	color: #8F7BA4;
+	margin-bottom: 20px;
+	padding: 0 0 0;
+	font-family: 'Inter', Arial, sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.card__button:hover {
+	cursor: pointer;
+	box-shadow: 0px 0px 20px #764DA0;
+}
+
+.card__buttons {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.card__add-group {
+	width: 33px;
+	height: 33px;
+	background-size: contain;
+	border: none;
+	background-color: transparent;
+	background-image: url(../../../images/user-add-svgrepo-com.svg);
+	padding: 0;
+	margin: 0;
+}
+
+.card__add-group:hover {
+	cursor: pointer;
+	box-shadow: 0px 0px 20px #764DA0;
+}
+
+.card__delete-button {
+	position: absolute;
+	top: 18px;
+	right: 14px;
+	width: 18px;
+	height: 18px;
+	background-size: contain;
+	border: none;
+	background-color: #D9D9D9;
+	background-image: url(../../../images/close-button.svg);
+  cursor: pointer;
+}
+
+.card__action-tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 5;
+  bottom: 90%;
+  left: 116%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card__delete-button:hover + .card__action-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* .card__text:hover {
+	cursor: pointer;
+} */

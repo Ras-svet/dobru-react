@@ -1,0 +1,102 @@
+.user-labs__card {
+	background-color: #D9D9D9;
+	border: 0;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 18px 46px 18px 21px;
+	z-index: 0;
+	transition: 0.2s;
+  margin-bottom: 20px;
+}
+
+.user-labs__card:hover {
+	transform: scale(1.03);
+	cursor: pointer;
+}
+
+.user-labs__card-appointed {
+  background: linear-gradient(90deg, rgba(187, 170, 204, 1) 0%, rgba(187, 170, 204, 0.7) 40%, rgba(187, 170, 204, 0) 100%);
+  border: 1px solid #BBAACC;
+  animation: fadeInGradient 10s cubic-bezier(0.4, 0, 0.2, 1) forwards; /* Анимация с продолжительностью 4 секунды и кубическим сглаживанием */
+}
+
+@keyframes fadeInGradient {
+  from {
+    background-position: -100%;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+
+.user-labs__card-text {
+	padding: 0;
+	margin: 0;
+	background: url('../../../images/circle.png') no-repeat left;
+	padding-left: 30px;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 400;
+	align-self: center;
+}
+
+.user-labs__card-text_bold {
+  font-weight: 500;
+}
+
+.user-labs__card-action {
+  display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.user-labs__card-status {
+  width: 80px;
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 400;
+	padding-left: 29px;
+	align-self: center;
+	justify-self: start;
+}
+
+.user-labs__card-status_white {
+  color: #fff;
+}
+
+.good {
+  background: url('../../../images/easy.svg') no-repeat left;
+  background-size: contain;
+}
+
+.bad {
+  background: url('../../../images/hard.svg') no-repeat left;
+  background-size: contain;
+}
+
+.user-labs__card-button {
+  border: none;
+  background-size: contain;
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.button_appoint {
+  background: url('../../../images/appointButton.svg') no-repeat center;
+}
+
+.button_disappoint {
+  background: url('../../../images/disappointButton.svg') no-repeat center;
+}
+
+.card_disable {
+  opacity: 0.5;
+}

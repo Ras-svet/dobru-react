@@ -1,0 +1,44 @@
+.user-labs {
+  display: flex;
+	flex-direction: column;
+	max-width: 1300px;
+  margin: 0px 15px;
+}
+
+.user-labs__filter {
+  display: flex;
+	flex-direction: row;
+	gap: 56px;
+	padding-top: 100px;
+}
+
+.filter__select {
+	outline: none;
+	border-radius: 24px;
+	padding-left: 10px;
+	background: url('../../../images/strelka__vniz.png') no-repeat right #8B7D99;
+	color: #fff;
+	line-height: 20px;
+	font-weight: 400;
+	font-size: 18px;
+	border: 0;
+	appearance: none;
+	background-position: 93%;
+	padding: 8px 40px 8px 16px;
+}
+
+.filter__select:focus {
+	outline: none;
+	box-shadow: 0px 0px 20px #8B7D99;
+}
+
+.filter__select:hover {
+	cursor: pointer;
+}
+
+.user-labs__cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+}
